@@ -8,6 +8,7 @@ AngleBetweenVectors = "ec570357-d46e-52ed-9726-18773498274d"
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 LibSerialPort = "a05a14c7-6e3b-5ba9-90a2-45558833e1df"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [compat]

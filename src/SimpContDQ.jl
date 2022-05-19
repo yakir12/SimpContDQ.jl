@@ -9,7 +9,6 @@ using LibSerialPort, AngleBetweenVectors
 export main, close_all
 
 include("leds.jl")
-include("utils.jl")
 
 # const O = Observable
 const strip = Ref{Union{Nothing, Strip}}(nothing)
@@ -44,13 +43,15 @@ end
 
 function main()
 
+  reset()
+
   txt = ""
   while txt ≠ "q"
     println("Choose sun-azimuth:")
     txt = readline()
     try 
       α = parse(Int, txt)
-      update_strip!(strip[], 0, 255, 0, 1, α)
+      update_strip!(strip[], 0, 255, 0, 1, deg2rad(α))
     catch ex
       if ex isa ArgumentError
         continue
