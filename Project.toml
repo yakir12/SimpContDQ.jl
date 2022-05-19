@@ -3,7 +3,16 @@ uuid = "cad68ddf-1d99-4191-8166-6f59d65197ef"
 authors = ["yakir12 <12.yakir@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+AngleBetweenVectors = "ec570357-d46e-52ed-9726-18773498274d"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+LibSerialPort = "a05a14c7-6e3b-5ba9-90a2-45558833e1df"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
 [compat]
+AngleBetweenVectors = "0.3"
+LibSerialPort = "0.5"
 julia = "1"
 
 [extras]
